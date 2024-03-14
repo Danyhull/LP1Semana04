@@ -19,6 +19,8 @@ namespace BetterDecorator
         /// frase</param>
         /// <param name="c">Char recebido para imprimir um número de vezes no
         /// início e fim da string</param>
+        /// <param name="i">Int recebido para repetir o char</param>
+        /// <returns>Uma string</returns>
         private static string Decor(string s, char dec, int count)
         {
             string frase = "";
@@ -33,10 +35,10 @@ namespace BetterDecorator
             }
             return frase;
         }
-         /// <summary>
+        /// <summary>
         /// recebe uma string e imprime
         /// </summary>
-        static void Main(string[]args)
+                static void Main(string[]args)
         {
             Console.WriteLine(Decor("Lost Forever",'.',3));
         } 
