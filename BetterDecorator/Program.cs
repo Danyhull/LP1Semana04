@@ -19,15 +19,15 @@ namespace BetterDecorator
         /// frase</param>
         /// <param name="c">Char recebido para imprimir um número de vezes no
         /// início e fim da string</param>
-        private static string Decor(string s, char dec, int num)
+        private static string Decor(string s, char dec, int count)
         {
             string frase = "";
-            for (int i = 0; i<num; i++)
+            for (int i = 0; i<count; i++)
             {
                 frase += $"{dec}";
             }
             frase += $"{s}";
-            for (int i = 0; i<num; i++)
+            for (int i = 0; i<count; i++)
             {
                 frase += $"{dec}";
             }
