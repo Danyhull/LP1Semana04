@@ -2,7 +2,7 @@
 
 namespace BetterDecorator
 {
-     /// <summary>
+    /// <summary>
     /// Programa que recebe 3 parâmetros e imprime-os de acordo com a função 
     /// Decor, imprime um char no ínicio e no fim um número de int vezes com uma
     /// string no meio.
@@ -35,12 +35,21 @@ namespace BetterDecorator
             }
             return frase;
         }
+        private static string Decor()
+        {
+            return (Decor("User did not specify args!",'=',2));
+        } 
         /// <summary>
         /// recebe uma string e imprime
         /// </summary>
-                static void Main(string[]args)
+        static void Main(string[]args)
+
         {
-            Console.WriteLine(Decor("Lost Forever",'.',3));
+            if (args.Length == 3)
+                Console.WriteLine(Decor(args[0],char.Parse(args[1])
+            , int.Parse(args[2])));
+            else
+                Console.WriteLine(Decor());
         } 
     }
 }
